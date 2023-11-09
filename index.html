@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Agency - your choice!</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/90fe504632.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+
+    <header class="header absolute top-0 left-0 w-full p-5 px-20 z-10">
+
+        <div class="container flex justify-between items-center">
+            <a href="" class="logo">
+                <img class="w-40" src="assets/images/logo.svg" alt="">
+            </a>
+            <!-- Desk top  -->
+            <nav class="navbarDesk text-white rounded-md ">
+                <ul class="navbarForDesk flex">
+                    <li class="ml-5"><a href="#" class="navbarLinkDesk hover:bg-violet-500 px-2 rounded py-1">How it
+                            Works</a></li>
+                    <li class="ml-5"><a href="#" class="navbarLinkDesk hover:bg-violet-500 px-2 rounded py-1">Our
+                            Work</a></li>
+                    <li class="ml-5"><a href="#"
+                            class="navbarLinkDesk hover:bg-violet-500 px-2 rounded py-1">Pricing</a></li>
+                    <li class="ml-5"><a href="#" class="navbarLinkDesk hover:bg-violet-500 px-2 rounded py-1">About
+                            Us</a></li>
+                </ul>
+            </nav>
+            <!-- responsive nav  -->
+            <nav class="navbar text-white rounded-md opacity-0 z-10 transition-all absolute top-full right-10 "
+                data-navbar>
+                <ul class="navbarList">
+                    <li><a href="#" class="navbarLink hover:bg-violet-500 px-2 rounded py-1">Our Work</a></li>
+                    <li><a href="#" class="navbarLink hover:bg-violet-500 px-2 rounded py-1">How it Works</a></li>
+                    <li><a href="#" class="navbarLink hover:bg-violet-500 px-2 rounded py-1">Pricing</a></li>
+                    <li><a href="#" class="navbarLink hover:bg-violet-500 px-2 rounded py-1">About Us</a></li>
+                </ul>
+            </nav>
+
+            <button href=""
+                class="hover:bg-violet-500 tryNow bg-transparent border border-slate-500 text-white px-5 py-1 rounded">Try
+                it
+                now</button>
+
+            <button class="nav-open-btn " aria-label="toggle menu" data-nav-toggle-btn>
+                <i class="menu-icon text-2xl fa-solid fa-bars" aria-hidden="true"></i>
+                <i class="close-icon text-2xl fa-solid fa-x" aria-hidden="true"></i>
+            </button>
+
+            <div class="overlay fixed top-0 left-0 w-full h-[100vh] pointer-events-none " data-overlay>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+
+        <section class="section hero mt-20 ">
+
+            <div
+                class=" flex flex-col-reverse items-center container lg:grid gap-5 lg:grid-cols-2 justify-center justify-items-center">
+
+                <div class="hero-content text-white">
+                    <h1 class="text-3xl lg:text-6xl -mt-20 mb-5">Take Care <span class="mt-2">of Your Brand</span></h1>
+                    <p class="hero-text text-slate-300 text-sm mb-5 w-2/3">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci sed minima similique?
+                    </p>
+                    <div class="input-wrapper flex">
+                        <input type="email" placeholder="Enter Your Email" name="email_address"
+                            class="text-black input-field px-2 py-1 rounded">
+                        <button type="submit" class="ml-1 bg-amber-500 px-4 py-1 rounded text-white">Let's Talk</button>
+                    </div>
+                </div>
+
+                <figure class="hero-banner mb-40 lg:mb-0 md:mb-0">
+                    <img class="" width="500" height="700" src="assets/images/hero-banner.png" alt="Hero Banner"
+                        data-parallax data-parallax-speed="10">
+
+                    <div class="banner-logo hidden lg:block">
+                        <img alt="YouTube" width="100" height="100" class="shape shape-1"
+                            src="assets/images/hero-icon-1.png" alt="" data-parallax data-parallax-speed="15">
+
+                        <img alt="Twitter" width="120" height="120" class="shape shape-2"
+                            src="assets/images/hero-icon-2.png" alt="" data-parallax data-parallax-speed="25">
+
+                        <img alt="Instagram" width="130" height="130" class="shape shape-3"
+                            src="assets/images/hero-icon-3.png" alt="" data-parallax data-parallax-speed="40">
+                    </div>
+
+
+                </figure>
+
+            </div>
+
+        </section>
+
+        <section class="process mt-20">
+            <div class="howItWorks text-center">
+                <h1 class="text-2xl text-white lg:text-2xl">How It Works</h1>
+                <p class="w-3/4 lg:w-2/6 m-auto mt-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam
+                    ipsum,
+                    impedit
+                    quos
+                    qui odio
+                    assumenda?</p>
+            </div>
+            <div class="HeroDiv mt-10 process-wrapper flex items-center gap-10 w-11/12 m-auto justify-center">
+                <div class="process-img w-1/3">
+                    <img src="assets/images/process-banner.png" alt="">
+                </div>
+                <div class=" process-method w-1/2 grid grid-cols-1 lg:grid-cols-2 gap-5">
+                    <div class="process-box hover:bg-slate-800 transition-all cursor-pointer p-5 rounded-md">
+                        <div class="process-item-img">
+                            <img src="assets/images/process-icon-1.png" alt="">
+                        </div>
+                        <div class="mt-3 process-item-content">
+                            <h3 class="text-2xl text-white">Ideation</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam doloribus aspernatur,
+                                doloremque asperiores aut ipsum!</p>
+                        </div>
+                    </div>
+                    <div class="process-box  hover:bg-slate-800 transition-all cursor-pointer p-5 rounded-md">
+                        <div class="process-item-img">
+                            <img src="assets/images/process-icon-2.png" alt="">
+                        </div>
+                        <div class="mt-3 process-item-content">
+                            <h3 class="text-2xl text-white">Budget</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam doloribus aspernatur,
+                                doloremque asperiores aut ipsum!</p>
+                        </div>
+                    </div>
+                    <div class="process-box  hover:bg-slate-800 transition-all cursor-pointer p-5 rounded-md">
+                        <div class="process-item-img">
+                            <img src="assets/images/process-icon-3.png" alt="">
+                        </div>
+                        <div class="mt-3 process-item-content">
+                            <h3 class="text-2xl text-white">Performance</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam doloribus aspernatur,
+                                doloremque asperiores aut ipsum!</p>
+                        </div>
+                    </div>
+                    <div class="process-box  hover:bg-slate-800 transition-all cursor-pointer p-5 rounded-md">
+                        <div class="process-item-img">
+                            <img src="assets/images/process-icon-4.png" alt="">
+                        </div>
+                        <div class="mt-3 process-item-content">
+                            <h3 class="text-2xl text-white">Speed</h3>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam doloribus aspernatur,
+                                doloremque asperiores aut ipsum!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ourWork w-11/12 m-auto mb-20">
+
+            <div class="contentOfWork text-center mt-20 mb-16">
+                <h1 class="text-2xl lg:text-4xl text-white">Our Work</h1>
+                <p class="w-2/6 mt-2 m-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam omnis ullam
+                    ratione?
+                    Totam,
+                    repellat
+                    nesciunt!</p>
+            </div>
+            <div class="mt-5 displayWorkSample flex gap-5">
+                <div class="workSample">
+                    <img class="rounded-2xl" src="assets/images/work-1.jpg" alt="">
+                    <div class="text-center mt-2">
+                        <h1 class="text-xl text-white">Product Design</h1>
+                        <p class="">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="workSample">
+                    <img class="rounded-2xl" src="assets/images/work-2.jpg" alt="">
+                    <div class="text-center mt-2">
+                        <h1 class="text-xl text-white">App Development</h1>
+                        <p class="">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+                <div class="workSample">
+                    <img class="rounded-2xl" src="assets/images/work-3.jpg" alt="">
+                    <div class="text-center mt-2">
+                        <h1 class="text-xl text-white">Virtual Reality</h1>
+                        <p class="">Lorem ipsum dolor sit amet.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="workBtn">
+                <button class="m-auto mt-10 bg-violet-500 px-5 py-2 rounded-md text-white hover:bg-violet-600">See
+                    More</button>
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footerContent">
+            <div class="footerLogo mb-5 flex flex-col items-center">
+                <div class="footerLogoImg">
+                    <img src="assets/images/logo.svg" alt="">
+                </div>
+                <p>New York, USA</p>
+                <div class="footerIcon">
+
+                </div>
+                <div class="footerBtn mt-2">
+                    <button class="bg-violet-700 text-white px-3 py-1 rounded">Contact Us</button>
+                </div>
+            </div>
+            <div class="footerLink mt-10 grid grid-cols-3 justify-items-center items-center">
+                <ul>
+                    <li><a href="#">Work With 🇺s</a></li>
+                    <li><a href="#">Advertise With Us</a></li>
+                    <li><a href="#">Support Us</a></li>
+                    <li><a href="#">Bussiness Conference</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Bussiness Conference</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">About 🇺s</a></li>
+                    <li><a href="#">FAQ</a> </li>
+                    <li><a href="#">Report A Bug</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr class="mt-10 w-3/4 m-auto ">
+        <div class="lowerFooter text-center mt-10 flex justify-around">
+            <div class="flex">
+                &copy; all right reserved 2024, Developed By <a class="ml-2 font-semibold " href="#">Rehoman Alif</a>
+            </div>
+            <div>
+                <ul class="flex">
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#" class="ml-3">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

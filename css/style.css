@@ -1,0 +1,237 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2023 codewithsadee
+ */
+
+
+
+
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root{
+  /* background color  */
+  --bg-dark-purple: hsla(260, 62%, 11%, 1);
+  --bg-russian-violet: hsla(259, 61%, 14%, 1);
+  --bg-vivid-violet: hsla(273, 100%, 55%, 1);
+  --bg-sunglow: hsla(43, 100%, 61%, 1);
+  --bg-blue-jeans: hsla(202, 100%, 50%, 1);
+  --bg-white-alpha-10: hsla(0, 0%, 100%, 0.1);
+
+  /* text color  */
+
+  --text-white: hsla(0, 0%, 100%, 1);
+  --text-black: hsla(0, 0%, 0%, 1);
+  --text-sunglow: hsla(43, 100%, 61%, 1);
+  --text-white-alpha-60: hsla(0, 0%, 100%, 0.6);
+
+  /* border color  */
+  --border-blue-jeans: hsla(202, 100%, 50%, 1);
+  --border-white-alpha-10: hsla(0, 0%, 100%, 0.1);
+
+  --shadow-1: drop-shadow(0 20px 30px hsla(0, 0%, 0%, 0.1));
+  --shadow-2: drop-shadow(0 20px 30px hsla(0, 0%, 0%, 0.2));
+
+
+}
+
+
+
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*, *::before, *::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+a, img, span, button {
+  display: block;
+}
+
+body{
+  background-color: var(--bg-dark-purple);
+  color: var(--text-white-alpha-60);
+  line-height: 1.8;
+  
+}
+
+body.nav-active {
+  overflow: hidden;
+}
+
+
+/*-----------------------------------*\
+  #REUSED STYLE
+\*-----------------------------------*/
+
+
+
+
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.nav-open-btn{
+  display: none;
+}
+
+
+
+
+/*-----------------------------------*\
+  #HERO
+\*-----------------------------------*/
+
+.hero{
+  padding-block-start: 130px;
+  background-image: url("../assets/images/hero-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.hero-banner{
+  position: relative;
+  max-width: 540px;
+  margin-inline: auto;
+
+}
+
+.banner-logo .shape{
+  display: block;
+  position: absolute;
+  filter: var(--shadow-2);
+
+}
+.banner-logo .shape-1{
+  width: 13%;
+  top: 350px;
+  left: 80px;
+}
+.banner-logo .shape-2{
+  width: 16%;
+  top: 440px;
+  left: -20px;
+}
+.banner-logo .shape-3{
+  width: 20%;
+  bottom: -20px;
+  left: 80px;
+}
+
+
+/*-----------------------------------*\
+  #PROCESS
+\*-----------------------------------*/
+.process{
+  background-image: url(../assets/images/process-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+
+
+/*-----------------------------------*\
+  #WORK
+\*-----------------------------------*/
+
+
+
+
+/*-----------------------------------*\
+  #FOOTER
+\*-----------------------------------*/
+
+.footerLink ul li a:hover{
+  color: white;
+  text-decoration: underline;
+}
+
+.footer{
+  background-image: url(../assets/images/process-bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+/*-----------------------------------*\
+  #MEDIA QUERIES
+\*-----------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .navbarDesk{
+    display: none;
+  }
+  .tryNow{
+    display: none;
+  }
+  .nav-open-btn{
+    color: var(--text-white);
+    font-size: 3rem;
+    display: block;
+  }
+  
+  .nav-open-btn.active .menu-icon,
+  .nav-open-btn .close-icon {
+    display: none;
+  }
+  
+  .nav-open-btn .menu-icon,
+  .nav-open-btn.active .close-icon {
+    display: block; 
+  }
+  
+  .navbar{
+    background-color: var(--bg-vivid-violet);
+    padding: 15px 25px;
+    visibility: hidden;
+    /* transition: 500ms; */
+  }
+  .navbar.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-15px);
+  }
+  .navbarList li:not(:last-child){
+    margin-block-end: 5px;
+  }
+  
+  .navbarLink{
+    font-weight: 500;
+  }
+  
+  .overlay.active {
+    pointer-events: all;
+  }
+  
+  .HeroDiv{
+    flex-direction: column-reverse;
+  }
+  .process-img {
+    display: none;
+  }
+  .process-box{
+    border: 1px solid rgb(37, 49, 107);
+  }
+
+  .hero-content {
+    padding: 0px 70px;
+  }
+
+}
